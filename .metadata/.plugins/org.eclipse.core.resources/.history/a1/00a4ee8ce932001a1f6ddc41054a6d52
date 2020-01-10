@@ -1,0 +1,55 @@
+package com.mwe.CustomerService.Models;
+
+public class Customer {
+	
+	private int id;
+	private String fristName;
+	private String lastName;
+	private String gender;
+	private String driversLicense;
+	
+	public Customer() {
+		
+	}
+	
+	public Customer(String fristName, String lastName, String gender, String driversLicense) {
+		super();
+		this.fristName = fristName;
+		this.lastName = lastName;
+		this.gender = gender;
+		this.driversLicense = driversLicense;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getFristName() {
+		return fristName;
+	}
+	public void setFristName(String fristName) {
+		this.fristName = fristName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getDriversLicense() {
+		return driversLicense;
+	}
+	public void setDriversLicense(String driversLicense) {
+		this.driversLicense = driversLicense;
+	}
+	
+	
+
+}

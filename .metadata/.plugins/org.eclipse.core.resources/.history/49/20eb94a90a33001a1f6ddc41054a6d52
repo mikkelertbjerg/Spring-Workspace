@@ -1,0 +1,4 @@
+spring.jpa.hibernate.ddl-auto=none
+spring.datasource.url=jdbc:mysql:50.unoeuro.com:3306/mikkelertbjerg_dk_db_ls
+spring.datasource.username=mikkelertbjerg_dk
+spring.datasource.password=knockers2019

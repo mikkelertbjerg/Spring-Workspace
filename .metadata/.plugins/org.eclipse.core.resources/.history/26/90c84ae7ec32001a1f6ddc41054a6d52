@@ -1,0 +1,11 @@
+package com.mwe.CustomerService.Controllers;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
+import com.mwe.CustomerService.Models.Customers;
+
+@RepositoryRestResource
+public interface CRUDCustomer extends CrudRepository<Customers, Integer> {
+
+}

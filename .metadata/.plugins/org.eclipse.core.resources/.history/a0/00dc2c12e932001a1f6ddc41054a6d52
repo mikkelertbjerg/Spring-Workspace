@@ -1,0 +1,5 @@
+package com.mwe.CustomerService.Models;
+
+public class Customer {
+
+}

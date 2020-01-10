@@ -1,0 +1,13 @@
+package com.mwe.CustomerService.Controllers;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+
+import com.mwe.CustomerService.Models.Customer;
+
+public interface CustomerRepository extends CrudRepository<Customer, Integer> {
+
+	@Query(value = "Select c.first_name, c.last_name, c.gender, c.drivers_license FROM Customers c WHERE c.drivers_license = ?", nativeQuery = true)
+	public Customer findByDriversLicense(String driversLicense);
+
+}
